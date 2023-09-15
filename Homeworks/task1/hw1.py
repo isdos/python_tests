@@ -21,7 +21,7 @@ from typing import List, Tuple
 
 
 def major_and_minor_elem(inp: List) -> Tuple[int, int]:
-    occurance_dict = {x : inp.count(x) for x in inp}
-    max_value = max(occurance_dict, key=occurance_dict.get)
-    min_value = min(occurance_dict, key=occurance_dict.get)
+    occurrence_dict = {x : inp.count(x) for x in inp}
+    max_value = max(occurrence_dict, key=occurrence_dict.get)
+    min_value = min(occurrence_dict, key=occurrence_dict.get)
     return (max_value, min_value)
